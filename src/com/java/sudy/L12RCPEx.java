@@ -31,7 +31,19 @@ public class L12RCPEx {
 				default : result="가위 바위 보 중에 하나만 입력"; break;
 			}
 			System.out.println("결과 :"+result);
-			
+			//https://github.com/develckm/javaStudy20230605
 		}
 	}
+	//L13GradeCalcEx : switch로 입력받은 점수를 학점으로 변환 (10 or 5를 나누세요 )
+	//L14UpDownGameEx : 컴퓨터가 1부터 100 사이의 수 중에 하나를 고른 후 
+	//사용자가 5번 안에 맞추는 게임 
+	//컴퓨터가 랜덤 수로 70 을 선택
+	//사용자가 50을 입력 
+	//컴퓨터가 50이 70보다 작으니 업! 을 출력
+	//사용자가 90을 입력 
+	//컴퓨터가 70보다 크니 다운! 을 출력
+	//사용자가 75를 입력
+	//컴퓨터가 70보다 크니 다운! 을 출력
+	//사용자가 70을 입력
+	//컴퓨터가 승! 
 }
