@@ -2,6 +2,7 @@ package com.java.sudy;
 
 import java.awt.Button;
 import java.awt.Frame;
+import java.util.Scanner;
 
 public class L13IfTest {
 	//class public : java 문서의 주인 클래스, import 가능 
@@ -38,11 +39,11 @@ public class L13IfTest {
 		System.out.println("java.lang.*; 패키지는 기본 패키지 입니다.");
 		//주석 : 동작 되지 않는 코드 
 		/*설명 or 여러줄 주석*/
-		Frame f=new Frame("안녕");
-		Button btn=new Button("Button");
-		f.add(btn);
-		f.setBounds(1000, 500,300, 300);
-		f.setVisible(true);
+//		Frame f=new Frame("안녕");
+//		Button btn=new Button("Button");
+//		f.add(btn);
+//		f.setBounds(1000, 500,300, 300);
+//		f.setVisible(true);
 		
 		int a=10; 
 		//10 정수 데이터 (메모리 저장)
@@ -118,6 +119,38 @@ public class L13IfTest {
 		//두개가 같다는 것을 알려주기 위해 equals()
 		System.out.println(charArr==charArr2);
 		System.out.println(charArr.equals(charArr2));
+		//배열은 equals 가 구현되지 않았다.
+		
+		//비교연산 (수) -> true,false
+		System.out.println(i>0);
+		System.out.println(i<2);
+		//동등 비교 연산 -> true,false
+		//수=>비교 연산
+		//자료형 => 두개가 같은지 묻는다 
+		System.out.println(i==1);
+		System.out.println(i==1.0); 
+		//1 == 1.0  둘은 다른 데이터지만 수가 같은지 확인
+		System.out.println(charArr==charArr2);
+		System.out.println(charArr.hashCode());
+		System.out.println(charArr2.hashCode());
+		charArr2=charArr;
+		System.out.println(charArr==charArr2);
+		
+		String s5="안녕"; //{'안','녕'}
+		String s6="안녕"; //{'안','녕'}
+		System.out.println(s5==s6);
+		//문자열은 자주 쓰는 자료형이기 때문에 (리터럴하게 표기 했을 때 ) 
+		//같은 문자열이 있는지 확인하고 생성
+		System.out.println(s5.hashCode()); //hashCode 객체 주소
+		System.out.println(s6.hashCode());
+		
+		//java 가 실행되는 콘솔창에서 입력 
+		Scanner scanner=new Scanner(System.in);
+		String input=scanner.nextLine();
+		//리터럴하게 생성하지 않은 문자열
+		System.out.println("당신이 입력한 문자열 :"+input);
+		System.out.println(s5==input);
+		System.out.println(s5.equals(input));
 	}
 
 }
