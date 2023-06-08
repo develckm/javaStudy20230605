@@ -22,6 +22,7 @@ public class L20ArrayEx {
 		// ...
 		//7x9=63;
 		
+		//up down 게임을 반복으로 만들어보세요~ 
 	}
 
 }
